@@ -83,8 +83,8 @@ def new_year_wish():
 
         # Example playlist
         playlist = {
-            "Song 1": "music1.mp3",
-            "Song 2": "music2.mp3",
+            "Song 1": "https://music.youtube.com/watch?v=0RPzLGxepxg&list=OLAK5uy_nfb-BiQpZg2OMUiS_YsH0KMGZXPjmO_0E",
+            "Song 2": "https://music.youtube.com/watch?v=W2yASCPIkLA",
         }
 
         selected_song = st.selectbox('Select a song from the playlist', list(playlist.keys()))
@@ -99,7 +99,7 @@ def new_year_wish():
 
         if uploaded_file is not None:
             # Display the original image
-            st.image(uploaded_file, caption="Original Photo", use_column_width=True)
+            # st.image(uploaded_file, caption="Original Photo", use_column_width=True)
 
             # Apply a festive overlay
             festive_filtered_img = apply_festive_overlay(uploaded_file)
